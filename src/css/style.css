@@ -139,3 +139,71 @@ nav{
     cursor: pointer;
     outline: none;
 }
+
+.benefits {
+    min-height: 900px;
+    background: #ffffff;
+    padding: 71px 0 65px 0;
+}
+
+.benefits__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 0.7;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.benefits__header {
+    margin-top: 38px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 0.70;
+    text-align: center;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.benefits__item {
+    margin-top: 40px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.benefits__icon {
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits__text {
+    width: 341px;
+}
+.benefits__subheader {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: justify;
+    color: #1eacc7;
+}
+.benefits__descr {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: justify;
+    color: #202020;
+}
