@@ -181,13 +181,14 @@ nav{
 
 }
 .benefits__icon {
-    width: 113px;
+    min-width: 113px;
     height: 113px;
     background-color: #1eacc7;
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 26px;
 }
 
 .benefits__text {
