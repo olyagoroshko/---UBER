@@ -1,0 +1,455 @@
+@media(max-width: 1200px){
+    .title{
+        font-size: 35px;
+    }
+    .subtitle{
+        line-height: 20px;
+    }
+    .menu{
+        &__item{
+            padding-right: 20px;
+            &_link{
+                font-size: 13px;
+            }
+        }
+    }
+    .promo{
+        &__header{
+            font-size: 55px;
+        }
+    }
+    .benefits{
+        &__item{
+            margin-top: 65px;
+        }
+        &__text{
+            width: 300px;
+        }
+    }
+    .mobile{
+        &__item{
+            width: 290px;
+        }
+    }
+    .contact{
+        flex-direction: column;
+        .sosial-link{
+            ul{
+                padding: 0;
+                margin-top: 12px;
+            }
+        }
+        .store-link{
+            margin: 12px 0;
+        }
+    }
+}
+
+@media(max-width: 991px){
+    .title{
+        font-size: 32px;
+    }
+    .subtitle{
+        line-height: 20px;
+    }
+    .menu{
+        &__item{
+            padding-right: 8px;
+            &_link{
+                font-size: 10px;
+            }
+        }
+    }
+    .subheader {
+        &__logo{
+            img{
+                width: 100%;
+            }
+        }
+        &__official {
+            font-size: 11px;
+		    margin-top: 5px;
+        }
+        &__phone{
+            font-size: 18px;
+        }
+        &__btn{
+            margin-top: 21px;
+            height: 40px;
+            width: 100%;
+        }
+    }
+    .promo{
+        &__header{
+            font-size: 41px;
+        }
+        &__subheader{
+            font-size: 31px;
+        }
+        &__descr{
+            font-size: 18px;
+        }
+    }
+    .benefits{
+
+        &__item{
+            margin-top: 30px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__text{
+           margin-top: 20px;
+        }
+    }
+    .uberx{
+
+        &__header{
+            &_img{
+                width: 659px;
+            }
+        }
+    }
+}
+
+@media(max-width: 767px){
+    .title{
+        font-size: 30px;
+    }
+    .subtitle{
+        line-height: 20px;
+    }
+    .menu{
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0, 0, 0, .8);
+        transition: 0.5s all;
+        &_active{
+            left: 0;
+        }
+        &__item{
+            padding-right: 0;
+            margin: 10px 0;
+            &_link{
+                font-size: 20px;
+            }
+            &:not(:last-child){
+                border-right: 0;
+            }
+        }
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+        span{
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        }
+        &_active{
+            span{
+                margin-bottom: -2px;
+                &:nth-child(1){
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+                &:nth-child(3){
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .xs-hidden{
+        display: none;
+    }
+    .xs-visible{
+        display: block;
+    }
+    .subheader{
+        &__phone{
+            display: block;
+            font-size: 16px;
+            font-weight: 400;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 13px;
+        }
+        &__btn{
+            display: block;
+            width: 200px;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+    }
+    .promo{
+        &__header{
+            line-height: 45px;
+        }
+        &__subheader{
+            line-height: 36px;
+        }
+        &__descr{
+            font-size: 18px;
+        }
+    }
+    .benefits{
+        &__icon{
+            margin: 0;
+        }
+        &__text{
+           width: 450px;
+           .benefits__subheader{
+               text-align: center;
+           }
+           .benefits__descr{
+               margin-top: 8px;
+           }
+        }
+    }
+    .mobile {
+        &__item{
+            &_subtitle{
+                font-size: 22px;
+            }
+        }
+    }
+
+    .uberx{
+        min-height: 708px;
+        &__header{
+            &_img{
+                width: 459px;
+                margin-top: 100px;
+            }
+        }
+        &__subheader{
+            height: 220px;
+            &_descr{
+                padding-top: 95px;
+            }
+        }
+    }
+
+}
+
+@media(max-width:575px){
+    .title{
+        font-size: 15px;
+        margin-top: 15px;
+        line-height: 15px;
+    }
+    .subtitle{
+        font-size: 14px;
+        margin-top: 10px;
+        font-weight: 400;
+        &__item{
+            &_subtitle{
+                font-size: 16px;
+                line-height: 35px;
+            }
+        }
+    }
+
+    nav{
+        height: 30px;
+    }
+    .subheader{
+        height: 60px;
+        margin-top: 30px;
+        &__official{
+            display: none;
+        }
+        &__logo{
+            margin-top: 16px;
+        }
+        &__phone{
+            font-size: 12px;
+            font-weight: 400;
+            margin-top: 11px;
+        }
+        &__btn{
+            width: 110px;
+            height: 22px;
+            margin-top: 9px;
+            font-size: 10px;
+        }
+    }
+    .promo{
+        min-height: 400px;
+        padding: 143px 0 35px 0;
+        &__descr{
+            display: none;
+        }
+        &__header{
+            font-size: 30px;
+            line-height: 35px;
+            padding: 0 24px;
+        }
+        &__subheader{
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: 33px;
+            padding: 0 10px;
+        }
+        &__btn{
+            width: 210px;
+            height: 50px;
+            margin-top: 72px;
+            font-size: 16px;
+        }
+    }
+    .menu{
+        width: 85%;
+    }
+    .benefits{
+        padding: 22px 0 36px 0;
+        &__item{
+            margin-top: 26px;
+        }
+        &__text{
+           width: 100%;
+           margin-top: 27px;
+        }
+        &__subheader{
+            font-size: 16px;
+        }
+        &__descr{
+            font-size: 15px;
+        }
+    }
+    .mobile{
+        padding: 22px 0 43px 0;
+    }
+    .uberx{
+        min-height: 390px;
+        padding: 25px 0 33px 0;
+        background-color: #070716;
+        .title{
+            display: none;
+        }
+        .subtitle{
+            display: none;
+        }
+        &__header{
+            padding: 0;
+            background: none;
+            height: 100%;
+            &_img{
+                width: 100%;
+                margin-top: 35px;
+                margin-left: -10px;
+            }
+            &_descr{
+                &-visible{
+                    display: block;
+                    margin-top: 23px;
+                    font-size: 17px;
+                    font-weight: 300;
+                    line-height: 1.41;
+                    text-align: center;
+                    color: #ffffff;
+                }
+            }
+        }
+        &__subheader{
+            &-hidden{
+                display: none;
+            }
+        }
+    }
+    .require{
+        padding: 25px 0;
+        .row{
+            margin-top: 22px;
+            .require__block{
+                margin: 0;
+                .require__title{
+                    font-size: 16px;
+                }
+                .require__list{
+                    padding-left: 31px;
+                    margin-top: 6px;
+                    li{
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin-bottom: 8px;
+                    }
+                }
+                .require__descr{
+                    margin-top: -7px;
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+    .cities{
+        min-height: 360px;
+        padding: 25px 0 30px 0;
+        .subtitle{
+            margin-top: 4px;
+        }
+        &__link{
+            a{
+                bottom: 30px;
+                font-size: 13px;
+                line-height: 16px;
+            }
+        }
+    }
+    .contact{
+        .footer__nav{
+            .footer__line{
+                width: 253px;
+            }
+            &-first{
+                margin-top: 20px;
+                ul{
+                    li{
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                    li:not(:last-child) {
+                        margin-right: 20px;
+                    }
+                }
+            }
+            &-second{
+                margin: 0;
+                ul{
+                    li{
+                        a{
+                            font-size: 10px;
+                        }
+                    }
+                    li:not(:last-child) {
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .footer__language-link {
+                margin: 0;
+            }
+        }
+    }
+}

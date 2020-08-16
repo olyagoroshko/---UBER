@@ -22,11 +22,16 @@
                     <li class="menu__item"><a href="#" class="menu__item_link">Оставить заявку</a></li>
                 </ul>
             </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
         <div class="subheader">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 offset-md-1">
+                    <div class="col-6 col-md-4 offset-md-1">
                         <a href="#" class="subheader__logo">
                             <img src="icons/subheader/logo.png" alt="logo">
                         </a>
@@ -34,22 +39,24 @@
                             Официальный партнер Uber в Москве
                         </div>
                     </div>
-                    <div class="col-md-2 offset-md-2">
+                    <div class="xs-hidden col-6 col-md-3 offset-md-1 col-xl-2 offset-xl-2">
                         <div class="subheader__call">Звоните нам ежедневно</div>
                         <a href="tel:84957970988" class="subheader__phone">8 495 797 09 88</a>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-3">
+                        <a href="tel:84957970988" class="xs-visible subheader__phone">8 495 797 09 88</a>
                         <button class="subheader__btn">заказать звонок</button>
                     </div>
                 </div>
             </div>
+
         </div>
     </header>
 
     <section class="promo">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 offset-md-1">
+                <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
                     <h1 class="promo__header">КОМПАНИЯ UBER PARTNERS!</h1>
                     <h2 class="promo__subheader">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
                     <div class="promo__descr">
@@ -203,37 +210,37 @@
                 Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile__item mobile__item_1">
                         <div class="mobile__item_subtitle">оформление заказа одним касанием</div>
                         <div class="mobile__item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile__item mobile__item_2">
                         <div class="mobile__item_subtitle">надежная подача</div>
                         <div class="mobile__item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile__item mobile__item_3">
                         <div class="mobile__item_subtitle">прозрачные цены</div>
                         <div class="mobile__item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile__item mobile__item_4">
                         <div class="mobile__item_subtitle">безналичная оплата</div>
                         <div class="mobile__item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile__item mobile__item_5">
                         <div class="mobile__item_subtitle">обратная связь</div>
                         <div class="mobile__item_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="mobile__item mobile__item_6">
                         <div class="mobile__item_subtitle">разделить
                             стоимость поездки</div>
@@ -251,9 +258,14 @@
                 <div class="title">Выбор - отличная штука!</div>
                 <div class="subtitle">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
                 <img src="img/uberx/big_img.png" alt="uberx" class="uberx__header_img">
+                <div class="uberx__header_descr uberx__header_descr-visible">
+                    Машины на каждый день.
+                    <br>
+                    Лучше, быстрее и дешевле, чем такси
+                </div>
             </div>
         </div>
-        <div class="uberx__subheader">
+        <div class="uberx__subheader uberx__subheader-hidden">
             <div class="container">
                 <div class="uberx__subheader_descr">
                     Машины на каждый день.
@@ -280,9 +292,9 @@
                             <li>Ни каких взносов  0%!</li>
                             <li>Можем подключать удаленно без приезда в офис</li>
                             <li>ИП не требуется</li>
-                            <li>Заказы распределяются без учета рейтинга ближай-<br>шим водителям</li>
+                            <li>Заказы распределяются без учета рейтинга ближайшим водителям</li>
                             <li>Работа только по безналичному расчету</li>
-                            <li>Деньги перечисляем на карту водителю или наличны-<br>ми в офисе</li>
+                            <li>Деньги перечисляем на карту водителю или наличными в офисе</li>
                         </ul>
                         <div class="require__descr">
                             В день заработок составляет 7000-12000р + бонус 3000т рублей
@@ -346,38 +358,45 @@
     </section>
 
     <footer class="contact">
-        <div class="sosial-link">
-            <ul>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>
+        <div>
+            <div class="sosial-link">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="footer__nav">
-            <div class="footer__line"></div>
-            <div class="footer__nav-first">
-                <ul>
-                    <li><a href="#">на главную</a></li>
-                    <li><a href="#">города</a></li>
-                    <li><a href="#">для водителей</a></li>
-                </ul>
-            </div>
-            <div class="footer__nav-second">
-                <ul>
-                    <li><a href="#">центр поддержки</a></li>
-                    <li><a href="#">вакансии</a></li>
-                    <li><a href="#">разработчики</a></li>
-                    <li><a href="#">блог</a></li>
-                    <li><a href="#">о нас</a></li>
-                </ul>
-            </div>
-            <div class="footer__language-link">
-                <a href="#">русский</a>
+        <div>
+            <div class="footer__nav">
+                <div class="footer__line"></div>
+                <div class="footer__nav-first">
+                    <ul>
+                        <li><a href="#">на главную</a></li>
+                        <li><a href="#">города</a></li>
+                        <li><a href="#">для водителей</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav-second">
+                    <ul>
+                        <li><a href="#">центр поддержки</a></li>
+                        <li><a href="#">вакансии</a></li>
+                        <li><a href="#">разработчики</a></li>
+                        <li><a href="#">блог</a></li>
+                        <li><a href="#">о нас</a></li>
+                    </ul>
+                </div>
+                <div class="footer__language-link">
+                    <a href="#">русский</a>
+                </div>
             </div>
         </div>
-        <div class="store-link"></div>
+        <div>
+            <div class="store-link"></div>
+        </div>
     </footer>
+    <script src="../src/js/script.js"></script>
 </body>
 </html>
